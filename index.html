@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAA COMMERCE LTD · Mobile games</title>
+<meta name="description" content="SableApricot Games">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SAA COMMERCE LTD">
+<meta property="og:title" content="SAA COMMERCE LTD · Mobile games">
+<meta property="og:description" content="SableApricot Games">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/fonts/dmsans.css">
+<style>
+:root {
+  --bg: hsl(52 16% 6%);
+  --card: hsl(52 14% 10%);
+  --card2: hsl(52 14% 15%);
+  --glow: hsl(232 55% 24%);
+  --ink: hsl(52 10% 95%);
+  --muted: hsl(52 8% 64%);
+  --line: hsl(52 12% 16%);
+  --line2: hsl(52 12% 24%);
+  --accent: hsl(232 78% 74%);
+  --sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.55 var(--sans); }
+.wrap { max-width: 72rem; margin: 0 auto; padding: clamp(1rem, 3vw, 1.8rem) clamp(.9rem, 3vw, 1.8rem) 2.4rem; }
+.bento { display: grid; gap: .9rem; grid-template-columns: 1fr; }
+.tile { background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: clamp(1.2rem, 3vw, 1.7rem); display: flex; flex-direction: column; gap: .8rem; min-width: 0; }
+.intro { background: radial-gradient(120% 140% at 0% 0%, var(--glow) 0%, var(--card) 58%); justify-content: flex-end; min-height: 15rem; }
+.intro .mono { width: 46px; height: 46px; border-radius: 14px; background: var(--accent); color: var(--bg); display: grid; place-items: center; font-weight: 800; font-size: 1.3rem; margin-bottom: auto; }
+.intro h1 { margin: 0; font-size: clamp(2rem, 5.4vw, 3.4rem); line-height: 1.02; letter-spacing: -.04em; font-weight: 800; }
+.intro p { margin: 0; color: var(--muted); font-size: 1.08rem; max-width: 36ch; }
+.tile h2 { margin: 0; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.tile .txt { margin: 0; color: var(--muted); }
+.reach { display: flex; flex-direction: column; gap: .55rem; }
+.reach a { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; word-break: break-all; }
+.reach a:hover { color: var(--accent); }
+.reach svg { width: 16px; height: 16px; flex: 0 0 16px; color: var(--accent); }
+.game .who { display: flex; align-items: center; gap: .85rem; }
+.game .icon { width: 56px; height: 56px; border-radius: 16px; background: var(--card2); flex: 0 0 56px; }
+.game h3 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; font-weight: 800; }
+.game .short { margin: 0; color: var(--muted); font-size: .95rem; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; margin-top: auto; }
+.game.wide .pair { grid-template-columns: repeat(4, 1fr); }
+.pair img { border-radius: 14px; background: var(--card2); }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; margin: 0; }
+.btn { display: inline-flex; align-items: center; gap: .45rem; padding: .58rem 1rem; border-radius: 999px; font-size: .86rem; font-weight: 700; line-height: 1; text-decoration: none; border: 1px solid transparent; transition: background-color .12s, border-color .12s, color .12s; }
+.btn svg { width: 14px; height: 14px; }
+.btn-play { background: var(--accent); color: var(--bg); }
+.btn-play:hover { filter: brightness(1.1); }
+.btn-ghost { border-color: var(--line2); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+footer { margin-top: 1.4rem; color: var(--muted); font-size: .84rem; text-align: center; }
+.none { color: var(--muted); margin: 0; }
+@media (min-width: 760px) {
+  .bento { grid-template-columns: repeat(2, 1fr); }
+  .intro { grid-column: span 2; }
+  .game.wide { grid-column: span 2; }
+}
+@media (min-width: 1060px) {
+  .bento { grid-template-columns: repeat(3, 1fr); }
+  .intro { grid-column: span 2; grid-row: span 2; min-height: 22rem; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main class="bento">
+    <header class="tile intro">
+      <div class="mono" aria-hidden="true">S</div>
+      <h1>SAA COMMERCE LTD</h1>
+      <p>SableApricot Games</p>
+    </header>
+    <section class="tile" id="about">
+      <h2>About</h2>
+      <p class="txt">We build colorful puzzle games based on sorting, matching, and pattern recognition. Clear rules and gradually changing levels keep gameplay approachable.</p>
+      <p class="txt">Everything we publish is listed here with its store page and privacy policy.</p>
+    </section>
+    <section class="tile" id="contact">
+      <h2>Contact</h2>
+      <div class="reach">
+        <a href="mailto:saacommerceltd3@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 8.2 5.6a1.4 1.4 0 0 0 1.6 0L21 7"/></svg><span>saacommerceltd3@gmail.com</span></a>
+      </div>
+    </section>
+    <article class="tile game wide">
+      <div class="who"><img class="icon" src="/icons/bend-rhythm.png" alt="" width="56" height="56" loading="lazy"><h3>Bend Rhythm</h3></div>
+      <p class="short">Daily stretches with a countdown on every move, so you know how long to hold.</p>
+      <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=me.bendrhythm.app"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/bend-rhythm/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      <div class="pair"><img src="/shots/bend-rhythm_1.png" alt="Bend Rhythm screenshot 1" loading="lazy" decoding="async"><img src="/shots/bend-rhythm_2.png" alt="Bend Rhythm screenshot 2" loading="lazy" decoding="async"><img src="/shots/bend-rhythm_3.png" alt="Bend Rhythm screenshot 3" loading="lazy" decoding="async"><img src="/shots/bend-rhythm_4.png" alt="Bend Rhythm screenshot 4" loading="lazy" decoding="async"></div>
+    </article>
+    <article class="tile game">
+      <div class="who"><img class="icon" src="/icons/daily-walk-streak.png" alt="" width="56" height="56" loading="lazy"><h3>Daily Walk Streak</h3></div>
+      <p class="short">Follow a walking programme with daily targets, quick taps, and streak tracking.</p>
+      <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=me.dailywalk.ticks"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/daily-walk-streak/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      <div class="pair"><img src="/shots/daily-walk-streak_1.png" alt="Daily Walk Streak screenshot 1" loading="lazy" decoding="async"><img src="/shots/daily-walk-streak_2.png" alt="Daily Walk Streak screenshot 2" loading="lazy" decoding="async"></div>
+    </article>
+  </main>
+  <footer>&copy; 2026 SAA COMMERCE LTD &middot; saacommerceltd.cfd</footer>
+</div>
+</body>
+</html>
